@@ -84,6 +84,7 @@ h6{
 
 .fa-icon{
     width: 25px;
+    height: 20px;
     margin: 0 15px;
     margin-top: 4px; 
     opacity: 0.6;
@@ -94,6 +95,7 @@ h6{
 }
 .i-icon{
     width: 35px;
+    height: 30px;
     margin: 0 15px;
     margin-top: 0px;
     opacity: 0.6;
@@ -103,6 +105,7 @@ h6{
 }
 .y-icon{
     width: 25px;
+    height: 20px;
     margin: 0px 15px;
     margin-top: 5px; 
     opacity: 0.6;
@@ -165,7 +168,7 @@ h6{
     display: block;
     border: 1px solid rgba(0, 0, 0, 0.233);
 }
-.three button{
+.b-button{
     margin-top: 10px;
     height: 45px;
     width: 170px;
@@ -185,4 +188,17 @@ color: black;
 .last{
     margin-left: 20px;
     
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.b{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }

@@ -28,6 +28,12 @@ body{
     color: black;
     font-size: 48px;
     font-weight: 600;
+    text-align: center;
+    
+
+}
+.fo-mar{
+    margin-top: 100px;
 }
 
 .underline{
@@ -35,6 +41,8 @@ body{
     height: 6px;
     background-color: black;
     border-radius: 9px;
+   margin-left: 48%;
+   margin-top: 20px;
 }
 .inputs{
     margin-top: 55px;
@@ -75,7 +83,7 @@ body{
 .buttons{
     display: flex;
     gap: 30px;
-    margin: 60px auto;
+    margin: 60px ;
 }
 .submit{
     display: flex;

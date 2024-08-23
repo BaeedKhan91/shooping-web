@@ -1,16 +1,20 @@
 import React from "react";
-import footerPic from './../assets/fimg.webp'
+import footerPic from './../../assets/fimg.webp'
 import ReadMore from "./readmore";
-import dicon from "./../assets/dil-icon.png"
-import facicon from '../assets/f-icon.jpeg'
-import instaicon from '../assets/ins-icon.jpeg'
-import youtubeicon from '../assets/you-icon.webp'
+import dicon from "./../../assets/dil-icon.png"
+import facicon from '../../assets/f-icon.jpeg'
+import instaicon from '../../assets/ins-icon.jpeg'
+import youtubeicon from '../../assets/you-icon.webp'
 import './footer.css'
 
 function Footer (){
     const longText= 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis aliquam optio dolorem consequuntur veniam dignissimos tempore temporibus, numquam quod iure? Illo doloribus sequi ratione excepturi quas ut quos velit dolorem quo obcaecati, id repellendus asperiores nesciunt sit accusamus cumque et facilis corporis aspernatur, pariatur odio molestiae at mollitia? Deleniti quod odit laudantium est, soluta ut, expedita ipsam, commodi quasi rem fugiat? Sed nisi ut officia delectus qui voluptatem, commodi deserunt unde odio consectetur, numquam fugit et veritatis aliquid eveniet repudiandae quae praesentium quidem saepe a ducimus. Illum non ratione ipsum aliquam natus asperiores eligendi eos, ipsam dolorum consectetur vero cupiditate impedit reprehenderit placeat, cumque repellat quisquam accusantium molestiae accusamus quam laudantium sunt harum ullam! Sed officiis ex sequi quis suscipit voluptas commodi labore alias quam modi tempore voluptatibus, harum earum beatae reprehenderit, dolorem incidunt ea dolore. Tempora minus officia nihil consequatur optio ex hic libero soluta. Doloremque ex odit eius tempora adipisci cupiditate officiis unde officia vel porro quam odio placeat obcaecati dignissimos, minus autem sunt. Culpa dolor, aut explicabo temporibus tempore et odit esse molestiae officia deserunt obcaecati itaque repellendus, numquam sapiente officiis facere sunt eveniet sint aspernatur cupiditate veritatis est. Est commodi, at voluptates porro, aspernatur sit natus nemo quibusdam consequatur, iusto delectus vel ut facere laudantium dolore! Illo officia dignissimos est, exercitationem praesentium, maiores quam culpa saepe modi sunt suscipit id eos nobis dicta eligendi nulla placeat expedita quae ipsa! Rerum quisquam nostrum aperiam sapiente quas impedit magnam dolore debitis deleniti, perspiciatis praesentium cupiditate eos fuga nam ex facere libero expedita. Temporibus, accusamus! Dolore, maiores maxime voluptatibus sapiente magni repellendus deserunt consequatur blanditiis commodi dignissimos atque velit, neque temporibus cupiditate. Deleniti suscipit sunt beatae repellat harum incidunt quis magni illum tenetur quod, earum similique mollitia, voluptatibus pariatur explicabo labore quasi vero ullam delectus accusamus ad inventore. Sequi repellendus commodi perferendis ex totam labore reiciendis neque a eaque voluptate veritatis explicabo voluptas iusto obcaecati cupiditate sunt, quaerat nobis excepturi ut rem asperiores eveniet quo repellat architecto. Ad in eaque nisi et laboriosam, omnis laudantium deserunt! Impedit distinctio, modi quidem a, quis quas reprehenderit iure dolorum unde soluta ea explicabo quisquam labore. Magnam veniam maxime nobis repellendus architecto id? Sapiente reprehenderit reiciendis vitae nulla hic modi eaque architecto necessitatibus assumenda? Veniam laboriosam commodi tenetur ut sapiente sunt est praesentium dolor quidem. Molestias vero iusto doloribus cum illo dolor, laborum necessitatibus sapiente quasi totam? Quia repellendus eos ipsum fugiat minus odio dolorem aspernatur assumenda laudantium reprehenderit nisi perferendis similique dolores, odit molestias, necessitatibus officia itaque enim adipisci quod facere. Architecto, expedita! Excepturi consequatur aliquid, blanditiis architecto amet molestias impedit voluptatem autem fugit quia perferendis sequi magnam quisquam accusantium dolorum, inventore temporibus necessitatibus accusamus enim minus. Facilis nisi dolorum, repellendus corrupti aliquid deleniti fuga, facere dicta blanditiis a ipsa! Voluptate dignissimos quia unde eaque eum vero explicabo nobis, est velit, fugit deleniti provident numquam minus id aliquid adipisci aut. No'
     return(
+        <>
         <div className="footer">
+            <div className="b">            <button className="b-button top">View All Products</button>
+            </div>
+        <div className="seperation"></div>
             <div className="main">
 
 <img src={footerPic} alt="" className="f-pic"/>
@@ -67,11 +71,12 @@ function Footer (){
         <p>Newsletter</p>
        <p> Subscribe to receive updates, access to exclusive deals, and more.</p>
             <input type="text" placeholder="E-mail" />
-            <button>Subscribe</button>
+            <button className="b-button">Subscribe</button>
     </div>
 </div>
 <p className="last">© 2024 - Jeem Designed & Developed by Jeem</p>
         </div>
+        </>
     )
 }
 
