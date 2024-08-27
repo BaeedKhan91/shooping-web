@@ -5,6 +5,7 @@ import watch from "./../../assets/watch2.jpg"
 import airpods from "./../../assets/airpods.jpg"
 import tshirt from "./../../assets/tshirt.jpg"
 import bottle from "./../../assets/bottle.jpg"
+import Page from "../page";
 import "./product.css";
 
 function Product() {
@@ -22,7 +23,8 @@ function Product() {
                     <p>Experience luxury in its purest form with our exquisite perfume oil. Crafted from the finest natural ingredients</p>
                     <div className="base">
                         <div className="base1"></div>
-                        <div className="base2">Add to Cart</div>
+                        <a href={Page} className="base2">add to cart</a>
+                        {/* <div className="base2">Add to Cart</div> */}
                     </div>
                 </div>
 
