@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import footerPic from './../../assets/fimg.webp'
 import ReadMore from "./readmore";
 import dicon from "./../../assets/dil-icon.png"
@@ -48,16 +49,16 @@ function Footer (){
 </div>
 
 <div className="end">
-    <div className="one">About threift store
+    <div className="one"><h4>About threift store</h4>
         <p>Threift Store is a thought, a notion that stems from the appreciation of beauty from the simplest of silhouettes to the creations of bespoke beauty Thrieft store takes you on a journey of delicate embroideries and a fusion of international trends.</p>
         <div className="main-fab"> <a href=""><img src={facicon} alt="" className="fa-icon" /></a>
         <a href=""><img src={youtubeicon} alt="" className="y-icon"/></a>
         <a href=""><img src={instaicon} alt="" className="i-icon"/></a></div>
        
     </div>
-    <div className="two"><p>Store Policies</p>
-    <a href="">About us</a>
-    <a href="">Contact us</a>
+    <div className="two"><h4>Store Policies</h4>
+    <a href="/about">About us</a>
+    <a href="/contact">Contact us</a>
     <a href="">Shipping Policy</a>
     <a href="">Privacy Policy</a>
     <a href="">Return & Exchange Policy</a>
@@ -68,14 +69,16 @@ function Footer (){
     
     </div>
     <div className="three">
-        <p>Newsletter</p>
+        <h4>Newsletter</h4>
        <p> Subscribe to receive updates, access to exclusive deals, and more.</p>
             <input type="text" placeholder="E-mail" />
-            <button className="b-button">Subscribe</button>
+            <Link to='/login'>
+            <button className="b-button">Subscribe</button></Link>
     </div>
 </div>
-<p className="last">© 2024 - Jeem Designed & Developed by Jeem</p>
+<p className="last">© 2024 - Jeem Designed & Developed by Thrift Store</p>
         </div>
+        
         </>
     )
 }

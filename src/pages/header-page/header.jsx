@@ -10,8 +10,8 @@ function Nav() {
         <div className="nav">
             <div className="logo"><img src={logo} alt="" /> </div>
             <div className="menu" >
-           <div className="menu-list"> <p><Link to='/'>home</Link></p></div>
-                <div className="menu-list"><p><Link to='/home'>shop</Link></p></div>
+           {/* <div className="menu-list"> <p><Link to='/'></Link></p></div> */}
+                <div className="menu-list"><p><Link to='/shop'>shop</Link></p></div>
                 <div className="menu-list"> <p><Link to= '/about'>About</Link></p></div>
                  <div className="menu-list"><p><Link to= '/contact'>Contact</Link></p> </div>  
             </div>
