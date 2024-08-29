@@ -5,7 +5,7 @@ import Footer from '../../components/footer-component/footer'
 export default function home  ()  {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Products/>
       <Footer/>
 

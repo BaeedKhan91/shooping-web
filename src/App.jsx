@@ -1,7 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes,Route} from 'react-router-dom';
-import Home from './pages/home-page/home'
 import Initial from './pages/initial-page/initial'
+import Home from './pages/home-page/home'
+import Header from './pages/header-page/header'
 import About from './pages/about-page/about';
 import Contact from './pages/contact-page/contact';
 import Login from './pages/login-page/login'
@@ -18,11 +19,13 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Initial />}/>
+      <Route path="/" element={<Header />}>
+      <Route index element={<Initial />} />
       <Route path="/home" element={<Home />} />
       <Route  path='/contact' element={<Contact/>} />
       <Route path="/about" element={<About />} />
       <Route path="/login" element={<Login />} />
+      </Route>
 
       
     </Routes>
