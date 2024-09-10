@@ -1,3 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: black;
+}
+
+.content {
+    padding-top: 60px; /* Adjust based on your navbar height */
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -17,11 +39,13 @@ img{
     
 
 .nav{
-    /* background-color: antiquewhite; */
+    /* background-color: rgb(105, 67, 17); */
     width: 100wh;
     height: 50px;
     display: flex;
     box-shadow: 0 0 15px 1px;
+    /* margin-bottom: 100px; */
+
 }
 .logo{
     height: 100%;
@@ -39,6 +63,7 @@ img{
     display: flex;
     width: 30%;
     height: 100%;
+    padding: 5px;
     /* background-color: rgb(249, 148, 15); */
 }
 
@@ -79,47 +104,24 @@ img{
     align-content: center;
     font-weight: bold;
     cursor: pointer;
-    p:hover{
-        color: rgb(11, 188, 2);
-        border-bottom: 2px solid rgb(11, 188, 2);
-        font-size: large;
-    }
+    /* background-color: rgba(29, 29, 92, 0.747); */
+    margin: 0px 5px;
+    border-radius: 10px;
+    color: black;
+   
 }
-
-.front{
-    height: 540px;
-    width: 100wh;
-    background-color: transparent;
-    display: flex;
-}
-
-.front-one{
-    /* background-color: rgb(227, 119, 236); */
-    height: 100%;
-    width: 50%;
-    padding: 50px;
-    padding-top: 180px;
-    h1{
-        font-size: 50px;
-    }
-}
-.front-two{
-    height: 100%;
-    width: 50%;
-    padding: 30px;
-}
-.shop-btn{
-    height: 30px;
-    width: 150px;
-    margin-top: 20px;
-    margin-left: 40px;
-    border-radius: 30px;
-    border: 1px solid rgb(11, 188, 2);
-}
-.shop-btn:hover{
-    color: white;
+.menu-list:hover{
     background-color: rgb(11, 188, 2);
-    cursor: pointer;
-    box-shadow: 0 0 20px 2px rgb(11, 188, 2);
+}
+.menu-list p{
+    font-size: 20px;
+    
 
 }
+
+/* p:hover{
+    color: rgb(11, 188, 2);
+    border-bottom: 2px solid rgb(11, 188, 2);
+    font-size: large;
+} */
+

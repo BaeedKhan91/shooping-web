@@ -2,7 +2,7 @@
     /* background-color: aqua; */
     width: 100wh;
     height: fit-content;
-    margin: 20px;
+    margin: 80px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
 }
