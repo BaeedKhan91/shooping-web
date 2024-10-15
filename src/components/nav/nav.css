@@ -1,0 +1,75 @@
+.nav{
+    /* background-color: antiquewhite; */
+    width: 100wh;
+    height: 50px;
+    display: flex;
+    box-shadow: 0 0 15px 1px;
+}
+.logo{
+    height: 100%;
+    width: 50%;
+    padding: 5px;
+    padding-left: 120px;
+    /* background-color: brown; */
+
+    img{
+        height: 100%;
+        width: auto;
+        
+    }
+}
+.menu{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(249, 148, 15); */
+}
+.menu-list{
+    width:25% ;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    /* p:hover{
+        color: rgb(11, 188, 2);
+        border-bottom: 2px solid rgb(11, 188, 2);
+        font-size: large;
+    } */
+}
+.shop{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 8px;       
+    /* background-color: aquamarine; */
+}
+.log{
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    margin: 2px;
+    color: rgb(11, 188, 2);
+    border: 1px solid rgb(11, 188, 2);
+    cursor: pointer;
+}
+
+.sign{
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    margin: 2px;
+    color: white;
+    background-color: rgb(11, 188, 2);
+    border: none;
+    cursor: pointer;
+}
+.lnk{
+   text-decoration: none;
+   color: black;
+}
+.lnk:hover{
+    color: rgb(11, 188, 2);
+    font-size: 20px;
+}

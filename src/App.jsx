@@ -1,72 +1,31 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
-import {createBrowserRouter,RouterProvider,} from "react-router-dom";
-import Initial from './pages/initial-page/initial'
-import Shop from './pages/home-page/home'
-import Header from './pages/header-page/header'
-import About from './pages/about-page/about';
-import Contact from './pages/contact-page/contact';
-import Login from './pages/login-page/login'
-import './index.css'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import Nav from './pages/home/Home'
+import Shop from './pages/shop/Shop'
+import About from './pages/About'
+import Contact from './pages/contact'
+import Login from './pages/login/Login'
+import { BrowserRouter, Routes , Route} from 'react-router-dom'
 import './App.css'
 
+function App() {
 
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Header />,
-      
-      children: [
-        {
-          path: "/",
-          element: <Initial />,
-        },
-        {
-          path: "/shop",
-          element: <Shop />,
-        },
-        {
-          path: "/about",
-          element: <About />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
-        {
-          path: "/login",
-          element: <Login />,
-          },
-          {
-            path: "/initial",
-            element: <Initial />,
-            },
-      ]
-    },  
-        
-  ]);
-
+  return (
     <>
-    {/* <BrowserRouter>
-    <Routes>
-      <Route path="/"
-      element={<Header />
-      }>
-      <Route index element={<Initial />} />
-      <Route path="/home" element={<Home />} />
-      <Route  path='/contact' element={<Contact/>} />
-      <Route path="/about" element={<About />} />
-      <Route path="/login" element={<Login />} />
-      </Route>
-
-      
-    </Routes>
-    </BrowserRouter> */}
+      {/* <Nav/> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Nav />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  
-  ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
-  );
+  )
+}
+
+export default App
