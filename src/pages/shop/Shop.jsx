@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/nav/Navbar'
 import Product from '../../components/product/Product'
+import Footer from '../../components/footer/footer'
 import "./shop.css"
 
 const Shop = () => {
@@ -23,6 +24,7 @@ const Shop = () => {
     <Product />
     <Product />
     </div>
+    <Footer/>
     </>
       )
 }
